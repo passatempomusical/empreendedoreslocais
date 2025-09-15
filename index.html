@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC JET - Impressos em geral</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header .logo {
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        header .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        header .logo span {
+            font-size: 12px;
+            color: #555;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 18px;
+            color: #111;
+            
+        }
+
+        header p {
+            margin: 4px 0;
+            font-size: 14px;
+            color: #444;
+        }
+
+        header a {
+            font-size: 14px;
+            margin-right: 8px;
+        }
+
+        /* Container */
+        main {
+            max-width: 900px;
+            margin: 130px auto 20px auto;
+            padding: 15px;
+        }
+
+        /* Video responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Produtos */
+        .produto {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .produto img {
+            width: 140px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .produto h2 {
+            margin: 0 0 8px;
+            font-size: 18px;
+            color: #2f0daa;
+        }
+
+        .produto p {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: #000000;
+            text-align: justify;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            padding: 10px 16px;
+            background: orange;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        /* Mapa no footer */
+        .map-container {
+            width: 100%;
+            max-width: 900px;
+            height: 400px;
+            margin: 15px auto 0 auto;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: #2b2b2b;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        footer a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 16px;
+            }
+
+            .produto {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .produto img {
+                margin-bottom: 10px;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo_abcjet.png" alt="Logo ABC JET" />
+            <br />
+            <span>Desde 2003</span> 
+        </div>
+        <div style="flex:1">
+            <h1>ABC JET
+        <span style="display:block; font-size:16px; font-weight:normal;">
+            Impressão de Documentos, Xerox e Serviços em Cosmópolis/SP
+        </span>
+            <a href="https://wa.me/55997885338?text=Olá! Quero mais informações."
+               target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.facebook.com/abcjetcosmopolis" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com/abcjet_impressos" target="_blank" rel="noopener">Instagram</a>
+            <a href="mailto:abcjet.com.br@gmail.com">E-mail</a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Vídeo -->
+        <div class="video-container">
+            <iframe title="Vídeo institucional ABC JET"
+                    src="https://www.youtube.com/embed/DjOSM72cYac?autoplay=1&mute=1&loop=1&playlist=DjOSM72cYac&controls=1&rel=0&modestbranding=1"
+                    frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen
+                    loading="lazy"></iframe>
+        </div>
+
+        <h3>Alguns dos nossos serviços:</h3>
+
+        <!-- Produtos -->
+        <div class="produto">
+            <img src="senha_gov.png" alt="Melhorias e ajustes de Senha gov.br" />
+            <div style="flex:1">
+                <h2>Senhas .gov.br</h2>
+                <p>Criação, recuperação e aumento do nível de segurança de bronze para prata ou ouro.</p>
+                <p>Atendimento para desbloqueio de benefícios e empréstimos.</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Senhas%20gov.br"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="inss.png" alt="Atualização e desbloqueio de serviços do meu INSS" />
+            <div style="flex:1">
+                <h2>Soluções junto ao INSS</h2>
+                <p>Consultas, preenchimento, envio de formulários e solicitações de serviços junto ao INSS.</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20solu%C3%A7%C3%B5es%20junto%20ao%20INSS"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="impressao.jpg" alt="Impressão de documentos com qualidade" />
+            <div style="flex:1">
+                <h2>Impressão de documentos e materiais diversos</h2>
+                <p>Cartões de visita, panfletos, materiais publicitários, certificados, currículos etc.</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Impress%C3%A3o%20de%20documentos%20e%20materiais%20diversos"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="impressaodeboleto.jpg" alt="Impressão de boleto com discrição" />
+            <div style="flex:1">
+                <h2>Impressão de boletos</h2>
+                <p>Acesso no celular ou no site e impressão de boletos atualizados. Com acesso fácil ao boleto, a
+                    impressão é feita na hora!</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Impress%C3%A3o%20de%20boletos"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="encadernacao.jpg" alt="Encadernação de folhas A4" />
+            <div style="flex:1">
+                <h2>Encadernação de folhas A4</h2>
+                <p>Em papéis de tamanho até A4, seja livro ou caderno, manuscritos ou impressos, gerando praticidade ao
+                    juntar as páginas em um volume manuseável.</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Encaderna%C3%A7%C3%A3o%20de%20folhas%20A4"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="plastificacao.png" alt="Plastificação de documentos" />
+            <div style="flex:1">
+                <h2>Plastificação de papéis e documentos em Cosmópolis</h2>
+                <p>Com maquinário próprio, buscando proteger documentos de envelhecimento e manuseio constante,
+                    preservando sua vida útil.</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Plastifica%C3%A7%C3%A3o%20de%20pap%C3%A9is%20e%20documentos"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="declaracaodeautonomo.webp" alt="Declarações de autônomo" />
+            <div style="flex:1">
+                <h2>Declarações de Autônomo e afins</h2>
+                <p>Para os mais diversos fins, desde justificativas até meramente informativas. Feito em A4, preto e
+                    branco ou colorido.</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Declara%C3%A7%C3%B5es%20de%20Aut%C3%B4nomo%20e%20afins"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="curriculum.webp" alt="Elaboração de currículos profissionais" />
+            <div style="flex:1">
+                <h2>Elaboração, impressão de currículo profissional</h2>
+                <p>Modelos modernos e eficientes, projetando as informações profissionais do candidato.</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Elabora%C3%A7%C3%A3o%2C%20impress%C3%A3o%20de%20curr%C3%ADculo"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="enviar-email.jpg" alt="Formatação e envio de e-mail" />
+            <div style="flex:1">
+                <h2>Formatação e envio de email</h2>
+                <p>Completíssimo: linha de assunto, saudação, corpo da mensagem, desenvolvimento, conclusão e
+                    assinatura.</p>
+                <a class="btn-whatsapp"
+                   href="https://wa.me/5519997885338?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Formata%C3%A7%C3%A3o%20ou%20envio%20de%20email"
+                   target="_blank" rel="noopener">Fale no WhatsApp</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer / Mapa -->
+    <footer>
+        <section aria-labelledby="mapa-titulo">
+            <h2 id="mapa-titulo" style="color:#fff;margin:0 0 10px 0;">Nossa Localização</h2>
+            <div class="map-container" aria-hidden="false">
+                <iframe title="Mapa - ABC JET"
+                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d920.5523832106018!2d-47.197500891207696!3d-22.645975051408634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x94c8935a2143ae25%3A0xc7d30a6627045728!2sABC%20JET%20Digita%C3%A7%C3%A3o%20e%20impress%C3%A3o%20de%20documentos%2C%20impressos%20em%20geral%2C%20xerox%2C%20cartuchos%2Ftoners.%20-%20R.%20Dr.%20Campos%20S%C3%A1les%2C%20291%20-%20sala%201%20-%20Centro%2C%20Cosm%C3%B3polis%20-%20SP%2C%2013150-027!3m2!1d-22.6460679!2d-47.1968357!5e0!3m2!1spt-BR!2sbr!4v1757934662296!5m2!1spt-BR!2sbr"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <p style="margin-top:15px;">
+            Este site foi criado e é administrado por
+            <strong>empreendedoreslocais.com.br</strong> | Todos os direitos reservados.
+        </p>
+
+        <p>
+            Fale com o Responsável e apareça online! 👉
+            <a href="https://www.empreendedoreslocais.com.br" target="_blank" rel="noopener">Site</a> |
+            <a href="https://wa.me/5519991321263?text=Ol%C3%A1!%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20ter%20tamb%C3%A9m%20meu%20pr%C3%B3prio%20site%20nesta%20plataforma."
+               target="_blank" rel="noopener">WhatsApp</a> |
+            <a href="mailto:contato@empreendedoreslocais.com.br">E-mail</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
